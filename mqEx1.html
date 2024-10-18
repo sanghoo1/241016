@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>mqEx1</title>
+  <style>
+   
+    body{
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .wrapper{
+      display: grid;
+      grid-auto-rows: 40vh;
+    }
+    
+    .wrapper .box1{
+      background-color: blue ;
+      
+    }
+    .wrapper .box2{
+      background-color: blueviolet;
+    }
+    .wrapper .box3{
+      background-color:brown ;
+    }
+    
+    @media (min-width:768px) {
+      .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;     
+      }
+      
+      .wrapper .box3{
+        grid-column: 1/3;
+      }
+      
+    }
+    @media (min-width:1200px) {
+      .wrapper {
+        grid-template-columns: 2fr 3fr 1fr;
+        grid-auto-rows: 100vh;
+      }
+      
+      .wrapper .box3{
+        grid-column: auto; /* 초기화 */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box box1">item1</div>
+    <div class="box box2">item2</div>
+    <div class="box box3">item3</div>
+  </div>
+</body>
+</html>

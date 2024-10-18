@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>미디어쿼리선언방식</title>
+  <!-- 외부선언 
+   <link rel="stylesheet" href="./style.css">
+   -->
+   <!--  * 외부선언 2 모바일 우선인 경우 작은 값을 먼저 연결
+     <link rel="stylesheet" href="./mq_m.css">
+     <link rel="stylesheet" href="./mq_t.css">
+     <link rel="stylesheet" href="./mq_pc.css">
+     -->
+   <!--  외부선언 3 모바일 우선인 경우 작은 값을 먼저 연결 -->
+     <link rel="stylesheet" href="./mq_m.css">
+     <link rel="stylesheet" media="(min-width:768px)" href="./tablet.css" >
+     <link rel="stylesheet" media="(min-width:1200px)" href="./pc.css" >
+  <!-- 내부 선언 
+  <style>
+    /* 모바일 기준 */
+   html{
+    font-size: 16px ;
+   }
+   body{
+    margin: 0;
+    text-align: center;
+    word-break: break-all;
+    overflow-wrap: break-word; /* 단어 기준으로 줄바꿈*/
+   }
+   h1{
+    background-color: #C4E1F6;
+    margin: 0;
+    padding: 1.875rem;
+    transition: 0.4s;
+    font-size: 1.5rem;
+   }
+   h1 strong{
+    display: block;
+   }
+   h2{
+    background-color: #FEEE91;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 1.25rem;
+    transition: 0.4s;
+    
+   }
+   .container{
+    display: grid;
+    grid-auto-rows: 20vh;
+   }
+   .container .box1{background-color: #FFBD73;}
+   .container .box2{background-color: #605678;}
+   .container .box3{background-color:#8ABFA3 ;}
+
+
+   /* 768px 이상 */
+   @media (min-width: 768px) {
+    html{
+      font-size: 17px;
+    }
+    h1{
+      background-color: aquamarine;
+    }
+    h1 strong{
+      display: inline;
+    }
+    h2{
+      background-color: brown;
+    }
+    .container{
+      width: 70vw;
+      margin: 0 auto;
+    }
+   }
+
+   /* 1200px 이상 */
+   @media (min-width:1200px) {
+    html{
+      font-size: 18px;
+    }
+    h1{
+      color: #fff;
+      padding: 2.7rem;
+    }
+    h2{
+      display: none;
+    }
+    .container{
+      display: grid;
+      grid-template-columns:  repeat(3, 1fr);
+    }
+   }
+  </style>
+-->
+</head>
+
+<body>
+  <h1>미디어쿼리 <strong>선언방식</strong></h1>
+  <h2>내부선언과 <br>외부선언</h2>
+  <div class="container">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>mqEx3</title>
+  <style>
+   /* html{
+      font-size: 16px;
+    }
+    body{
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    ul{
+      
+      background-color: rgb(22, 133, 115);
+      list-style: none;
+      margin: 0;
+      padding: 2rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(2,minmax(10rem,1fr));
+      gap:0.5rem;
+
+    }
+    ul li{
+      background-color: rgb(243, 243, 243);
+      padding: 0.7rem 1.7rem;
+    }
+    ul li:nth-child(4){
+      display: none;
+    }
+
+    @media (min-width:768px) {
+      ul{
+        grid-template-columns: repeat(3,minmax(10rem,1fr));
+      }
+      ul li:nth-child(10){
+        display: none;
+      }
+    }
+    @media (min-width:1200px) {
+      ul{
+        grid-template-columns: repeat(4,minmax(10rem,1fr));
+      }
+      ul li:last-child{
+        display: block;
+        background-color: burlywood;
+      }
+      
+    }
+    @media (min-width:1500px) {
+      html{
+        font-size: 20px;
+      }
+      ul{
+        grid-template-columns: repeat(5,minmax(10rem,1fr));
+      }
+      ul li:nth-child(4){
+        display: block;
+      }
+      
+    }
+      */
+    body{
+        
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    
+    }
+    .wrapper{
+      list-style: none;
+      margin: 0 auto;
+      padding: 20px ;
+      display: grid;
+      /* box-sizing: border-box; */
+      background-color: cornflowerblue;
+      grid-template-columns: 1fr 1fr;
+      gap:20px;
+    }
+    .wrapper li{
+      background-color: #fff;
+      padding: 0 5px;
+     
+     
+      
+    }
+    .wrapper .none{
+      display: none;
+    }
+    @media (min-width:768px) {
+      /* 3열 */
+      .wrapper{
+        background-color: cadetblue;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .wrapper li:last-child{
+        display: none;
+      }
+    }
+    @media (min-width:1024px) {
+      /* 4열 */
+      .wrapper{
+        background-color: cadetblue;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .wrapper li:last-child{
+        display: block;
+        background-color: #eb8585;
+      }
+    }
+    @media (min-width:1600px) {
+      /* 5열 */
+
+      .wrapper{
+        background-color: cadetblue;
+        grid-template-columns: repeat(5, 1fr);
+        width: 90%;
+        font-size: 1.8rem;
+        padding: 30px;
+      }
+      .wrapper li{
+        padding: 5px 15px;
+      }
+      .wrapper .none{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul class="wrapper">
+    <li>txt1</li>
+    <li>txt2</li>
+    <li>txt3</li>
+    <li class="none">txt4</li>
+    <li>txt5</li>
+    <li>txt6</li>
+    <li>txt7</li>
+    <li>txt8</li>
+    <li>txt9</li>
+    <li>txt10</li>
+  </ul>
+</body>
+</html>

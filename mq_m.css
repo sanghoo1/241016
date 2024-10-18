@@ -1,0 +1,36 @@
+@charset "utf-8";
+html{
+  font-size: 16px ;
+ }
+ body{
+  margin: 0;
+  text-align: center;
+  word-break: break-all;
+  overflow-wrap: break-word; /* 단어 기준으로 줄바꿈*/
+ }
+ h1{
+  background-color: #C4E1F6;
+  margin: 0;
+  padding: 1.875rem;
+  transition: 0.4s;
+  font-size: 1.5rem;
+ }
+ h1 strong{
+  display: block;
+ }
+ h2{
+  background-color: #FEEE91;
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 1.25rem;
+  transition: 0.4s;
+  
+ }
+ .container{
+  display: grid;
+  grid-auto-rows: 20vh;
+ }
+ .container .box1{background-color: #FFBD73;}
+ .container .box2{background-color: #605678;}
+ .container .box3{background-color:#8ABFA3 ;}
+

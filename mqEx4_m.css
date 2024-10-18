@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+  background: url(https://picsum.photos/id/25/1920/1024) 50%
+  no-repeat fixed ;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+ul li{
+  padding: 10px 5px;
+  border-bottom: 1px solid #fff;
+}
+ul li:last-child{
+  background: url(./more_vert_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png) no-repeat 99% 50%/ contain;
+  background-color: rgb(0, 0, 255,0.5);
+  
+}
+
+ul li a{
+  color: #fff;
+  text-decoration: none;
+}

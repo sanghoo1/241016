@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 1200px 이상 */
+@media (min-width:1200px) {
+  html{
+    font-size: 18px;
+  }
+  h1{
+    color: #fff;
+    padding: 2.7rem;
+  }
+  h2{
+    display: none;
+  }
+  .container{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+  }
+ }
